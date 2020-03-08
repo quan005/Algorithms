@@ -6,7 +6,11 @@ from collections import namedtuple
 Item = namedtuple('Item', ['index', 'size', 'value'])
 
 def knapsack_solver(items, capacity):
-  pass
+  if items <= 0:
+    return 0
+
+  if Item[1] > capacity:
+    return 0
   
 
 if __name__ == '__main__':
@@ -24,3 +28,11 @@ if __name__ == '__main__':
     print(knapsack_solver(items, capacity))
   else:
     print('Usage: knapsack.py [filename] [capacity]')
+
+
+# WHAT WE KNOW:
+# 
+# 
+# 
+# 
+# 
